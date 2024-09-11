@@ -22,7 +22,7 @@ public class Arreglo {
         for (int i = 0; i < numeros.length; i++) {
             suma = numeros[i] + suma;
         }
-        System.out.println("Suma de todos los numeros" + suma);
+        System.out.println("Suma de todos los numeros es: " + suma);
     }
 
     public void elementoMayor() {
@@ -52,15 +52,15 @@ public class Arreglo {
 
     public void invertirArrego() {
         System.out.println("\n\n invertir elementos del arreglo");
+        System.out.println("\n\n Los elementos del arreglo normal son:");
 
-        for (int numero : numeros) {
-            System.out.println("El arreglo es:" + ",");
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println(numeros[i] + "");
         }
         for (int i = 0; i < numeros.length / 2; i++) {
             int temp = numeros[i];
             numeros[i] = numeros[numeros.length - 1 - i];
             numeros[numeros.length - i - 1] = temp;
-            System.out.println(("\n\n Arreglo invertido:"));
         }
         System.out.println("\n\n Arreglo invertido:");
 
@@ -95,7 +95,7 @@ public class Arreglo {
                 contador++;
             }
         }
-        System.out.println("El numero" + numeroBuscado + "aparecio" + contador + "veces");
+        System.out.println("El numero " + numeroBuscado + " aparecio " + contador + " veces ");
 
     }
 
